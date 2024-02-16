@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react";
 import axios from "axios";
 
-// console.log("ImageSearch.js", process.env.REACT_APP_UNSPLASH_ACCESS_KEY);
+// console.log("ImageSearch.js", process.env.REACT_APP);
 
 const ImageSearch = ({setImageList}) =>{
 
@@ -23,7 +23,7 @@ const ImageSearch = ({setImageList}) =>{
             headers: {
                 "Accept-Version": "v1",
                 Authorization : "Client-ID BwgzXIdNbwmvz1kD7PpgXWP0xcckG_sudaNUNvN6yTM"
-                // Authorization : `Client-ID ${process.env.REACT_APP_UNSPLASH_ACCESS_KEY}` 
+                // Authorization : `Client-ID ${process.env.REACT_APP}` 
             },
             params: {
                 query: searchQuery || "random"
